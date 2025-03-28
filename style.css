@@ -1,0 +1,596 @@
+/* url('https://pub-static.fotor.com/assets/bg/166f87f6-1958-41be-a6c5-8a64bfbee677.jpg')*/
+/*font*/
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*fin font */
+.barLight {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(184, 255, 166);
+  z-index: 100;
+  box-shadow: 0 0 10px rgb(184, 255, 166), 0 0 45px rgb(65, 252, 59), 0 0 200px rgb(0, 255, 0);
+  animation-name: rgb;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+.barLight--2 {
+  top: 0;
+}
+.barLight--3 {
+  top: 0;
+  width: 5px;
+  left: 0;
+  height: 100%;
+}
+.barLight--4 {
+  top: 0;
+  width: 5px;
+  left: auto;
+  right: 0;
+  height: 100%;
+}
+
+@keyframes rgb {
+  0% {
+    filter: hue-rotate(0);
+  }
+  50% {
+    filter: hue-rotate(360deg) saturate(600%);
+  }
+  100% {
+    filter: hue-rotate(0);
+  }
+}
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+}
+
+h1.title {
+  font-size: 65px;
+  font-family: "Pirata One", system-ui;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card--1 {
+  color: #006aff;
+  background-image: url("./assets/img/jpg/knight_full_back.webp"), linear-gradient(to top, #006aff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--1 p {
+  color: #599eff;
+}
+.card--1 h1 {
+  color: #003580;
+  text-shadow: 1.5px 1.5px #80b5ff;
+}
+.card--1:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--2 {
+  color: #ff4000;
+  background-image: url("./assets/img/jpg/auron_full_back.jpg"), linear-gradient(to top, #ff4000 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--2 p {
+  color: #ff8359;
+}
+.card--2 h1 {
+  color: #802000;
+  text-shadow: 1.5px 1.5px #ffa080;
+}
+.card--2:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--3 {
+  color: #c800ff;
+  background-image: url("./assets/img/jpg/purple_hq720.jpg"), linear-gradient(to top, #c800ff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--3 p {
+  color: #db59ff;
+}
+.card--3 h1 {
+  color: #640080;
+  text-shadow: 1.5px 1.5px #e480ff;
+}
+.card--3:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--4 {
+  color: #ff8000;
+  background-image: url("./assets/img/jpg/Solid-Snake-Metal-Gear-Cosplay-featured_600x.webp"), linear-gradient(to top, #ff8000 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--4 p {
+  color: #ffac59;
+}
+.card--4 h1 {
+  color: #804000;
+  text-shadow: 1.5px 1.5px #ffc080;
+}
+.card--4:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--5 {
+  color: #00ff55;
+  background-image: url("./assets/img/jpg/master_chief_back.jpg"), linear-gradient(to top, #00ff55 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--5 p {
+  color: #59ff91;
+}
+.card--5 h1 {
+  color: #00802b;
+  text-shadow: 1.5px 1.5px #80ffaa;
+}
+.card--5:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--6 {
+  color: #ff0000;
+  background-image: url("./assets/img/jpg/deadpool-sofa-game.webp"), linear-gradient(to top, #ff0000 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--6 p {
+  color: #ff5959;
+}
+.card--6 h1 {
+  color: maroon;
+  text-shadow: 1.5px 1.5px #ff8080;
+}
+.card--6:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--7 {
+  color: #00ffff;
+  background-image: url("./assets/img/jpg/asterix_400x400.jpg"), linear-gradient(to top, #00ffff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--7 p {
+  color: #59ffff;
+}
+.card--7 h1 {
+  color: teal;
+  text-shadow: 1.5px 1.5px #80ffff;
+}
+.card--7:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--8 {
+  color: #ffab24;
+  background-image: url("./assets/img/jpg/sauron_full_back.jpg"), linear-gradient(to top, #ffab24 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--8 p {
+  color: #ffcd7d;
+}
+.card--8 h1 {
+  color: #805c24;
+  text-shadow: 1.5px 1.5px #ffdca4;
+}
+.card--8:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--9 {
+  color: #ff9f00;
+  background-image: url("./assets/img/jpg/sazabi_full_back.png"), linear-gradient(to top, #ff9f00 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--9 p {
+  color: #ffc159;
+}
+.card--9 h1 {
+  color: #805000;
+  text-shadow: 1.5px 1.5px #ffcf80;
+}
+.card--9:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--10 {
+  color: #00ff70;
+  background-image: url("./assets/img/jpg/titanfall_bt.jpg"), linear-gradient(to top, #00ff70 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--10 p {
+  color: #59ffa2;
+}
+.card--10 h1 {
+  color: #008038;
+  text-shadow: 1.5px 1.5px #80ffb8;
+}
+.card--10:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--11 {
+  color: #00e2ff;
+  background-image: url("./assets/img/jpg/jackcooper_back.png"), linear-gradient(to top, #00e2ff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--11 p {
+  color: #59ecff;
+}
+.card--11 h1 {
+  color: #007180;
+  text-shadow: 1.5px 1.5px #80f1ff;
+}
+.card--11:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--12 {
+  color: #ff00ff;
+  background-image: url("./assets/img/jpg/Angel.Dust.600.4123602.jpg"), linear-gradient(to top, #ff00ff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--12 p {
+  color: #ff59ff;
+}
+.card--12 h1 {
+  color: purple;
+  text-shadow: 1.5px 1.5px #ff80ff;
+}
+.card--12:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--1::after {
+  background-image: url("./assets/img/png/knight.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--1:hover::after {
+  background-image: url("./assets/img/png/knight.png");
+  filter: drop-shadow(0 5px 2px rgb(20, 220, 255)) drop-shadow(0 0 5px rgb(20, 220, 255)) drop-shadow(0 0 20px rgba(0, 200, 255, 0.5));
+}
+.card--1:active {
+  transition-duration: 0.2s;
+}
+.card--1:active::after {
+  filter: drop-shadow(0 0 15px rgb(20, 220, 255)) drop-shadow(0 0 40px rgba(0, 200, 255, 0.5));
+}
+
+.card--2::after {
+  background-image: url("./assets/img/png/ffx-auron.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--2:hover::after {
+  background-image: url("./assets/img/png/ffx-auron.webp");
+  filter: drop-shadow(0 5px 2px rgb(255, 30, 20)) drop-shadow(0 0 5px rgb(255, 30, 20)) drop-shadow(0 0 20px rgba(255, 10, 0, 0.5));
+}
+.card--2:active {
+  transition-duration: 0.2s;
+}
+.card--2:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 30, 20)) drop-shadow(0 0 40px rgba(255, 10, 0, 0.5));
+}
+
+.card--3::after {
+  background-image: url("./assets/img/png/Dragoon_artwork_XIV.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--3:hover::after {
+  background-image: url("./assets/img/png/Dragoon_artwork_XIV.webp");
+  filter: drop-shadow(0 5px 2px rgb(173, 20, 255)) drop-shadow(0 0 5px rgb(173, 20, 255)) drop-shadow(0 0 20px rgba(153, 0, 255, 0.5));
+}
+.card--3:active {
+  transition-duration: 0.2s;
+}
+.card--3:active::after {
+  filter: drop-shadow(0 0 15px rgb(173, 20, 255)) drop-shadow(0 0 40px rgba(153, 0, 255, 0.5));
+}
+
+.card--4::after {
+  background-image: url("./assets/img/png/solid_snake.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--4:hover::after {
+  background-image: url("./assets/img/png/solid_snake.png");
+  filter: drop-shadow(0 5px 2px rgb(195, 45, 20)) drop-shadow(0 0 5px rgb(195, 45, 20)) drop-shadow(0 0 20px rgba(175, 25, 0, 0.5));
+}
+.card--4:active {
+  transition-duration: 0.2s;
+}
+.card--4:active::after {
+  filter: drop-shadow(0 0 15px rgb(195, 45, 20)) drop-shadow(0 0 40px rgba(175, 25, 0, 0.5));
+}
+
+.card--5::after {
+  background-image: url("./assets/img/png/john_117_halo_4.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--5:hover::after {
+  background-image: url("./assets/img/png/john_117_halo_4.png");
+  filter: drop-shadow(0 5px 2px rgb(20, 255, 170)) drop-shadow(0 0 5px rgb(20, 255, 170)) drop-shadow(0 0 20px rgba(0, 255, 150, 0.5));
+}
+.card--5:active {
+  transition-duration: 0.2s;
+}
+.card--5:active::after {
+  filter: drop-shadow(0 0 15px rgb(20, 255, 170)) drop-shadow(0 0 40px rgba(0, 255, 150, 0.5));
+}
+
+.card--6::after {
+  background-image: url("./assets/img/png/deadpool.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--6:hover::after {
+  background-image: url("./assets/img/png/deadpool.png");
+  filter: drop-shadow(0 5px 2px rgb(255, 20, 20)) drop-shadow(0 0 5px rgb(255, 20, 20)) drop-shadow(0 0 20px rgba(255, 0, 0, 0.5));
+}
+.card--6:active {
+  transition-duration: 0.2s;
+}
+.card--6:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 20, 20)) drop-shadow(0 0 40px rgba(255, 0, 0, 0.5));
+}
+
+.card--7::after {
+  background-image: url("./assets/img/png/asterix.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--7:hover::after {
+  background-image: url("./assets/img/png/asterix.webp");
+  filter: drop-shadow(0 5px 2px rgb(20, 140, 255)) drop-shadow(0 0 5px rgb(20, 140, 255)) drop-shadow(0 0 20px rgba(0, 120, 255, 0.5));
+}
+.card--7:active {
+  transition-duration: 0.2s;
+}
+.card--7:active::after {
+  filter: drop-shadow(0 0 15px rgb(20, 140, 255)) drop-shadow(0 0 40px rgba(0, 120, 255, 0.5));
+}
+
+.card--8::after {
+  background-image: url("./assets/img/png/sauron-renders.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--8:hover::after {
+  background-image: url("./assets/img/png/sauron-renders.webp");
+  filter: drop-shadow(0 5px 2px rgb(255, 200, 20)) drop-shadow(0 0 5px rgb(255, 200, 20)) drop-shadow(0 0 20px rgba(255, 180, 0, 0.5));
+}
+.card--8:active {
+  transition-duration: 0.2s;
+}
+.card--8:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 200, 20)) drop-shadow(0 0 40px rgba(255, 180, 0, 0.5));
+}
+
+.card--9::after {
+  background-image: url("./assets/img/png/sazabi.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--9:hover::after {
+  background-image: url("./assets/img/png/sazabi.png");
+  filter: drop-shadow(0 5px 2px rgb(255, 220, 20)) drop-shadow(0 0 5px rgb(255, 220, 20)) drop-shadow(0 0 20px rgba(255, 200, 0, 0.5));
+}
+.card--9:active {
+  transition-duration: 0.2s;
+}
+.card--9:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 220, 20)) drop-shadow(0 0 40px rgba(255, 200, 0, 0.5));
+}
+
+.card--10::after {
+  background-image: url("./assets/img/png/titanfall_bt_png.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--10:hover::after {
+  background-image: url("./assets/img/png/titanfall_bt_png.png");
+  filter: drop-shadow(0 5px 2px rgb(20, 255, 140)) drop-shadow(0 0 5px rgb(20, 255, 140)) drop-shadow(0 0 20px rgba(0, 255, 120, 0.5));
+}
+.card--10:active {
+  transition-duration: 0.2s;
+}
+.card--10:active::after {
+  filter: drop-shadow(0 0 15px rgb(20, 255, 140)) drop-shadow(0 0 40px rgba(0, 255, 120, 0.5));
+}
+
+.card--11::after {
+  background-image: url("./assets/img/png/JackCooper.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--11:hover::after {
+  background-image: url("./assets/img/png/JackCooper.webp");
+  filter: drop-shadow(0 5px 2px rgb(20, 140, 255)) drop-shadow(0 0 5px rgb(20, 140, 255)) drop-shadow(0 0 20px rgba(0, 120, 255, 0.5));
+}
+.card--11:active {
+  transition-duration: 0.2s;
+}
+.card--11:active::after {
+  filter: drop-shadow(0 0 15px rgb(20, 140, 255)) drop-shadow(0 0 40px rgba(0, 120, 255, 0.5));
+}
+
+.card--12::after {
+  background-image: url("./assets/img/png/angel_dust.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--12:hover::after {
+  background-image: url("./assets/img/png/angel_dust.png");
+  filter: drop-shadow(0 5px 2px rgb(255, 40, 255)) drop-shadow(0 0 5px rgb(255, 40, 255)) drop-shadow(0 0 20px rgba(255, 20, 250, 0.5));
+}
+.card--12:active {
+  transition-duration: 0.2s;
+}
+.card--12:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 40, 255)) drop-shadow(0 0 40px rgba(255, 20, 250, 0.5));
+}
+
+.container {
+  margin: 100px auto 100px auto;
+  max-width: 1200px;
+  width: 85%;
+  height: 70%;
+  display: grid;
+  gap: 50px;
+  row-gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  place-content: center;
+}
+.container .card {
+  height: 350px;
+  font-family: "Jacquard 24", system-ui;
+  background-position: center;
+  background-size: cover, 150%;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  position: relative;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+  perspective: -1800px;
+  place-content: center;
+}
+.container .card h1,
+.container .card p {
+  font-family: "Pirata One", system-ui;
+  z-index: 2;
+  transition-duration: 0.2s;
+}
+.container .card p {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.container .card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition-duration: 0.6s;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.container .card:hover {
+  cursor: pointer;
+  transform: rotateX(10deg) rotateY(0deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.container .card:hover h1 {
+  font-weight: 900;
+  font-size: 42px;
+  z-index: 10;
+  transform: rotateX(-10deg) translateY(-20px) translateZ(35px);
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: -12%;
+}
+.container .card:hover p {
+  margin-left: -12%;
+  margin-bottom: 0%;
+  transform: rotateX(-8deg) translateZ(20px);
+  font-size: 16.5px;
+  width: 120%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.container .card:hover::after {
+  content: "";
+  background-size: contain;
+  border-radius: 25px;
+  opacity: 1;
+  width: 115%;
+  height: 115%;
+  background-position: center;
+  left: -10%;
+  transform: rotateX(-11deg) translateY(-80px) translateZ(25px);
+}
+.container .card:active h1 {
+  font-size: 3em;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.container .card:active p {
+  font-size: 1em;
+}
+.container .card:active::after {
+  content: "";
+  width: 125%;
+  height: 125%;
+  background-size: contain;
+  background-position: left;
+  transform: rotateX(-11deg) translateY(-80px) translateZ(30px);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    transform-style: preserve-3d;
+    place-content: center;
+    perspective: 800px;
+  }
+  .container .card {
+    height: 300px;
+  }
+  .container .card p {
+    font-size: 14px;
+  }
+  .container .card:hover h1 {
+    margin-bottom: -25px;
+    transform: rotateX(-11deg) translateY(-30px) translateZ(12px);
+  }
+  .container .card:hover p {
+    margin-bottom: 10%;
+    margin-left: 0;
+    width: 100%;
+    font-size: 17px;
+    transform: rotateX(-11deg) translateY(0px) translateZ(12px);
+  }
+  .container .card:hover::after {
+    transform: rotateX(-11deg) translateY(-80px) translateZ(10px);
+  }
+  .container .card:active h1 {
+    transform: rotateX(-11deg) translateY(-40px) translateZ(15px);
+  }
+  .container .card:active p {
+    font-size: 17.5px;
+    transform: rotateX(-11deg) translateY(0px) translateZ(15px);
+  }
+}/*# sourceMappingURL=style.css.map */
