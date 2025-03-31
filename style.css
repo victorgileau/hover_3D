@@ -454,12 +454,12 @@ h1.title {
 }
 
 .card--3::after {
-  background-image: url("./assets/img/png/Dragoon_artwork_XIV.webp"), rgb(0, 0, 0);
+  background-image: url("./assets/img/png/Dragoon_Artwork_XIV.webp"), rgb(0, 0, 0);
   background-blend-mode: add;
   background-size: 10%;
 }
 .card--3:hover::after {
-  background-image: url("./assets/img/png/Dragoon_artwork_XIV.webp");
+  background-image: url("./assets/img/png/Dragoon_Artwork_XIV.webp");
   filter: drop-shadow(0 5px 2px rgb(173, 20, 255)) drop-shadow(0 0 5px rgb(173, 20, 255)) drop-shadow(0 0 20px rgba(153, 0, 255, 0.5));
 }
 .card--3:active {
