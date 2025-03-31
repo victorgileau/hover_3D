@@ -76,9 +76,16 @@ h1.title {
     row-gap: 100px;
     grid-template-columns: repeat(auto-fill, minmax(300px, auto));
     //grid-template-rows: repeat(auto-fill, minmax(250px, auto));
+    /*
     transform-style: preserve-3d;
     perspective: 1000px;
-    place-content: center;
+    place-content: center;*/
+
+    .containCard {
+        perspective: preserve-3d;
+        perspective: 1000px;
+        place-content: center;
+    }
 
     .card {
         height: 350px;

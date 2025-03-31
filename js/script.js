@@ -57,6 +57,56 @@ const app = Vue.createApp({
             title: "Jack Cooper",
             textContent: "Jack Cooper is the Pilot protagonist and the playable character of Titanfall 2's single-player campaign. Beginning his military career as a Rifleman in the Frontier Militia, he is the (eventual) Pilot of BT-7274.",
           },
+          {
+            number: "card--13",
+            title: "Harley Quinn",
+            textContent: "Harley Quinn is a criminal psychologist turned flamboyant criminal menace and the former girlfriend and sidekick to the Joker. While her intentions are typically good, her methods often betray her insanity, Quinn has acted as both ally and enemy to Batman.",
+          },
+          {
+            number: "card--14",
+            title: "Phoenix Wright",
+            textContent: "Phoenix Wright is a veteran defense attorney who heads the Wright Anything Agency. Mostly specializing in criminal trials, Wright is renowned for his ability to turn seemingly hopeless cases around.",
+          },
+          {
+            number: "card--15",
+            title: "Gryf",
+            textContent: "Gryfenfer, (de son vrai nom Anoth-Cha) est un Jaguarian et membre des Légendaires. Fils de l'ancien roi de Jaguarys et frère jumeau de l'actuel, il a été monslave durant sa jeunesse, sous les ordres de Menthos.",
+          },
+          {
+            number: "card--16",
+            title: "Batman",
+            textContent: "Batman is the superhero protector of Gotham City, a tortured, brooding vigilante dressed as a bat who fights against evil and strikes fear into the hearts of criminals everywhere. In his public identity, he is Bruce Wayne.",
+          },
+          {
+            number: "card--17",
+            title: "Mumbo Jumbo",
+            textContent: "MumboJumbo, known as Mumbo for short, is a YouTuber and member of the Hermitcraft server, known for his redstone videos. He joined at the start of Season 2. He has 9,310,000 subscribers and is the most subscribed of the Hermits.",
+          },
+          {
+            number: "card--18",
+            title: "Employee",
+            textContent: "Employees are playable characters and the main protagonists in Lethal Company. An employee's job is to venture out and explore moons, collect scrap and sell it to the Company in order to meet the profit quota.",
+          },
+          {
+            number: "card--19",
+            title: "Mega Man",
+            textContent: "Mega Man, known as Rockman (ロックマン Rokkuman) in Japan, or Mega (Rock in Japan) for short, is the main titular protagonist of the original Mega Man series.",
+          },
+          {
+            number: "card--20",
+            title: "Luke Triton",
+            textContent: "Luke Triton is the deuteragonist of the Professor Layton series. He is the son of Professor Layton's friend Clark Triton and is the professor's self-proclaimed apprentice.",
+          },
+          {
+            number: "card--21",
+            title: "Waldo",
+            textContent: "You found me!",
+          },
+          {
+            number: "card--22",
+            title: "Coach",
+            textContent: "I'm gonna teach your ass how to read.",
+          },
         ]
       }
     },
@@ -65,9 +115,11 @@ const app = Vue.createApp({
   app.component("persocard", {
     props: ["pnumber", "ptitle", "ptextcontent"],
     template: `
-    <div class="card" :class="pnumber">
-      <h1>{{ptitle}}</h1>
-      <p>{{ptextcontent}}</p>
+    <div class="containCard">
+      <div class="card" :class="pnumber">
+        <h1>{{ptitle}}</h1>
+        <p>{{ptextcontent}}</p>
+      </div>
     </div>
     `
   });

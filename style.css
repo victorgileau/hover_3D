@@ -261,6 +261,166 @@ h1.title {
   background-blend-mode: soft-light, multiply;
 }
 
+.card--13 {
+  color: #ff00ff;
+  background-image: url("./assets/img/jpg/harley_quinn_bg.jpg"), linear-gradient(to top, #ff00ff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--13 p {
+  color: #ff59ff;
+}
+.card--13 h1 {
+  color: purple;
+  text-shadow: 1.5px 1.5px #ff80ff;
+}
+.card--13:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--14 {
+  color: #408fff;
+  background-image: url("./assets/img/jpg/phoenix_wright_bg.jpg"), linear-gradient(to top, #408fff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--14 p {
+  color: #99c3ff;
+}
+.card--14 h1 {
+  color: #405a80;
+  text-shadow: 1.5px 1.5px #c0daff;
+}
+.card--14:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--15 {
+  color: #ff8000;
+  background-image: url("./assets/img/jpg/Gryf_bg.webp"), linear-gradient(to top, #ff8000 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--15 p {
+  color: #ffac59;
+}
+.card--15 h1 {
+  color: #804000;
+  text-shadow: 1.5px 1.5px #ffc080;
+}
+.card--15:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--16 {
+  color: #b1a500;
+  background-image: url("./assets/img/jpg/batman_bg.jpg"), linear-gradient(to top, #b1a500 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--16 p {
+  color: #b1ab59;
+}
+.card--16 h1 {
+  color: #322e00;
+  text-shadow: 1.5px 1.5px #b1ae80;
+}
+.card--16:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--17 {
+  color: #ff2929;
+  background-image: url("./assets/img/jpg/Mumbo_Jumbo.webp"), linear-gradient(to top, #ff2929 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--17 p {
+  color: #ff8282;
+}
+.card--17 h1 {
+  color: #802929;
+  text-shadow: 1.5px 1.5px #ffa9a9;
+}
+.card--17:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--18 {
+  color: #ff9b29;
+  background-image: url("./assets/img/jpg/lethal-company-manticoils.jpg"), linear-gradient(to top, #ff9b29 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--18 p {
+  color: #ffc582;
+}
+.card--18 h1 {
+  color: #805729;
+  text-shadow: 1.5px 1.5px #ffd7a9;
+}
+.card--18:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--19 {
+  color: #2937ff;
+  background-image: url("./assets/img/jpg/megaman.jpg"), linear-gradient(to top, #2937ff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--19 p {
+  color: #828aff;
+}
+.card--19 h1 {
+  color: #292f80;
+  text-shadow: 1.5px 1.5px #a9aeff;
+}
+.card--19:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--20 {
+  color: #33fd19;
+  background-image: url("./assets/img/jpg/luke.jpg"), linear-gradient(to top, #33fd19 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--20 p {
+  color: #82fd72;
+}
+.card--20 h1 {
+  color: #247e19;
+  text-shadow: 1.5px 1.5px #a4fd99;
+}
+.card--20:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--21 {
+  color: #ff0000;
+  background-image: url("./assets/img/jpg/waldo.jpg"), linear-gradient(to top, #ff0000 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--21 p {
+  color: #ff5959;
+}
+.card--21 h1 {
+  color: maroon;
+  text-shadow: 1.5px 1.5px #ff8080;
+}
+.card--21:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
+.card--22 {
+  color: #b700ff;
+  background-image: url("./assets/img/jpg/coach_bg.webp"), linear-gradient(to top, #b700ff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--22 p {
+  color: #d059ff;
+}
+.card--22 h1 {
+  color: #5c0080;
+  text-shadow: 1.5px 1.5px #db80ff;
+}
+.card--22:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
 .card--1::after {
   background-image: url("./assets/img/png/knight.png"), rgb(0, 0, 0);
   background-blend-mode: add;
@@ -453,6 +613,166 @@ h1.title {
   filter: drop-shadow(0 0 15px rgb(255, 40, 255)) drop-shadow(0 0 40px rgba(255, 20, 250, 0.5));
 }
 
+.card--13::after {
+  background-image: url("./assets/img/png/harley_quinn_PNG3.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--13:hover::after {
+  background-image: url("./assets/img/png/harley_quinn_PNG3.png");
+  filter: drop-shadow(0 5px 2px rgb(175, 40, 255)) drop-shadow(0 0 5px rgb(175, 40, 255)) drop-shadow(0 0 20px rgba(155, 20, 250, 0.5));
+}
+.card--13:active {
+  transition-duration: 0.2s;
+}
+.card--13:active::after {
+  filter: drop-shadow(0 0 15px rgb(175, 40, 255)) drop-shadow(0 0 40px rgba(155, 20, 250, 0.5));
+}
+
+.card--14::after {
+  background-image: url("./assets/img/png/phoenix_wright.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--14:hover::after {
+  background-image: url("./assets/img/png/phoenix_wright.png");
+  filter: drop-shadow(0 5px 2px rgb(70, 140, 255)) drop-shadow(0 0 5px rgb(70, 140, 255)) drop-shadow(0 0 20px rgba(50, 120, 250, 0.5));
+}
+.card--14:active {
+  transition-duration: 0.2s;
+}
+.card--14:active::after {
+  filter: drop-shadow(0 0 15px rgb(70, 140, 255)) drop-shadow(0 0 40px rgba(50, 120, 250, 0.5));
+}
+
+.card--15::after {
+  background-image: url("./assets/img/png/Gryf.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--15:hover::after {
+  background-image: url("./assets/img/png/Gryf.webp");
+  filter: drop-shadow(0 5px 2px rgb(255, 120, 20)) drop-shadow(0 0 5px rgb(255, 120, 20)) drop-shadow(0 0 20px rgba(255, 100, 0, 0.5));
+}
+.card--15:active {
+  transition-duration: 0.2s;
+}
+.card--15:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 120, 20)) drop-shadow(0 0 40px rgba(255, 100, 0, 0.5));
+}
+
+.card--16::after {
+  background-image: url("./assets/img/png/batman.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--16:hover::after {
+  background-image: url("./assets/img/png/batman.png");
+  filter: drop-shadow(0 5px 2px rgb(30, 30, 30)) drop-shadow(0 0 5px rgb(30, 30, 30)) drop-shadow(0 0 20px rgba(10, 10, 10, 0.5));
+}
+.card--16:active {
+  transition-duration: 0.2s;
+}
+.card--16:active::after {
+  filter: drop-shadow(0 0 15px rgb(30, 30, 30)) drop-shadow(0 0 40px rgba(10, 10, 10, 0.5));
+}
+
+.card--17::after {
+  background-image: url("./assets/img/png/mumbo_jumbo.png"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--17:hover::after {
+  background-image: url("./assets/img/png/mumbo_jumbo.png");
+  filter: drop-shadow(0 5px 2px rgb(255, 40, 60)) drop-shadow(0 0 5px rgb(255, 40, 60)) drop-shadow(0 0 20px rgba(255, 20, 40, 0.5));
+}
+.card--17:active {
+  transition-duration: 0.2s;
+}
+.card--17:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 40, 60)) drop-shadow(0 0 40px rgba(255, 20, 40, 0.5));
+}
+
+.card--18::after {
+  background-image: url("./assets/img/png/Employee2_Cel.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--18:hover::after {
+  background-image: url("./assets/img/png/Employee2_Cel.webp");
+  filter: drop-shadow(0 5px 2px rgb(255, 170, 60)) drop-shadow(0 0 5px rgb(255, 170, 60)) drop-shadow(0 0 20px rgba(255, 150, 40, 0.5));
+}
+.card--18:active {
+  transition-duration: 0.2s;
+}
+.card--18:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 170, 60)) drop-shadow(0 0 40px rgba(255, 150, 40, 0.5));
+}
+
+.card--19::after {
+  background-image: url("./assets/img/png/1200px-MegaMan_SSBU.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--19:hover::after {
+  background-image: url("./assets/img/png/1200px-MegaMan_SSBU.webp");
+  filter: drop-shadow(0 5px 2px rgb(40, 40, 255)) drop-shadow(0 0 5px rgb(40, 40, 255)) drop-shadow(0 0 20px rgba(20, 20, 250, 0.5));
+}
+.card--19:active {
+  transition-duration: 0.2s;
+}
+.card--19:active::after {
+  filter: drop-shadow(0 0 15px rgb(40, 40, 255)) drop-shadow(0 0 40px rgba(20, 20, 250, 0.5));
+}
+
+.card--20::after {
+  background-image: url("./assets/img/png/AzranLuke.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--20:hover::after {
+  background-image: url("./assets/img/png/AzranLuke.webp");
+  filter: drop-shadow(0 5px 2px rgb(40, 255, 120)) drop-shadow(0 0 5px rgb(40, 255, 120)) drop-shadow(0 0 20px rgba(20, 250, 100, 0.5));
+}
+.card--20:active {
+  transition-duration: 0.2s;
+}
+.card--20:active::after {
+  filter: drop-shadow(0 0 15px rgb(40, 255, 120)) drop-shadow(0 0 40px rgba(20, 250, 100, 0.5));
+}
+
+.card--21::after {
+  background-image: url("./assets/img/png/waldo_png.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--21:hover::after {
+  background-image: url("./assets/img/png/waldo_png.webp");
+  filter: drop-shadow(0 5px 2px rgb(20, 70, 255)) drop-shadow(0 0 5px rgb(20, 70, 255)) drop-shadow(0 0 20px rgba(0, 50, 250, 0.5));
+}
+.card--21:active {
+  transition-duration: 0.2s;
+}
+.card--21:active::after {
+  filter: drop-shadow(0 0 15px rgb(20, 70, 255)) drop-shadow(0 0 40px rgba(0, 50, 250, 0.5));
+}
+
+.card--22::after {
+  background-image: url("./assets/img/png/Render-coach.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--22:hover::after {
+  background-image: url("./assets/img/png/Render-coach.webp");
+  filter: drop-shadow(0 5px 2px rgb(255, 170, 20)) drop-shadow(0 0 5px rgb(255, 170, 20)) drop-shadow(0 0 20px rgba(250, 150, 0, 0.5));
+}
+.card--22:active {
+  transition-duration: 0.2s;
+}
+.card--22:active::after {
+  filter: drop-shadow(0 0 15px rgb(255, 170, 20)) drop-shadow(0 0 40px rgba(250, 150, 0, 0.5));
+}
+
 .container {
   margin: 100px auto 100px auto;
   max-width: 1200px;
@@ -462,7 +782,13 @@ h1.title {
   gap: 50px;
   row-gap: 100px;
   grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  /*
   transform-style: preserve-3d;
+  perspective: 1000px;
+  place-content: center;*/
+}
+.container .containCard {
+  perspective: preserve-3d;
   perspective: 1000px;
   place-content: center;
 }
