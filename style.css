@@ -846,7 +846,6 @@ h1.title {
   place-content: center;*/
 }
 .container .containCard {
-  background-color: red;
   perspective: preserve-3d;
   perspective: 1000px;
   place-content: center;
