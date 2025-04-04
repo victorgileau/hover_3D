@@ -479,6 +479,22 @@ h1.title {
   background-blend-mode: soft-light, multiply;
 }
 
+.card--23 {
+  color: #0011ff;
+  background-image: url("./assets/img/jpg/megamind_meme.png"), linear-gradient(to top, #0011ff 10%, rgba(0, 0, 0, 0));
+  background-blend-mode: darken, multiply;
+}
+.card--23 p {
+  color: #5964ff;
+}
+.card--23 h1 {
+  color: #000980;
+  text-shadow: 1.5px 1.5px #8088ff;
+}
+.card--23:hover {
+  background-blend-mode: soft-light, multiply;
+}
+
 .card--1::after {
   background-image: url("./assets/img/png/knight.png"), rgb(0, 0, 0);
   background-blend-mode: add;
@@ -829,6 +845,22 @@ h1.title {
 }
 .card--22:active::after {
   filter: drop-shadow(0 0 15px rgb(255, 170, 20)) drop-shadow(0 0 40px rgba(250, 150, 0, 0.5));
+}
+
+.card--23::after {
+  background-image: url("./assets/img/png/Mega_render.webp"), rgb(0, 0, 0);
+  background-blend-mode: add;
+  background-size: 10%;
+}
+.card--23:hover::after {
+  background-image: url("./assets/img/png/Mega_render.webp");
+  filter: drop-shadow(0 5px 2px rgb(70, 120, 255)) drop-shadow(0 0 5px rgb(70, 120, 255)) drop-shadow(0 0 20px rgba(50, 100, 255, 0.5));
+}
+.card--23:active {
+  transition-duration: 0.2s;
+}
+.card--23:active::after {
+  filter: drop-shadow(0 0 15px rgb(70, 120, 255)) drop-shadow(0 0 40px rgba(50, 100, 255, 0.5));
 }
 
 .container {

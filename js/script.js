@@ -107,6 +107,11 @@ const app = Vue.createApp({
           title: "Coach",
           textContent: "I'm gonna teach your ass how to read.",
         },
+        {
+          number: "card--23",
+          title: "Megamind",
+          textContent: "Rise! Rise, my glorious creation, and come to Papa! | Spider? Y-uhh, yes, the, the spee-ider. Even the smallest bite from Arachnus deathicus will instantly paralyze - OW! Get if off! Ow, it bit me!",
+        },
       ]
     }
   },
