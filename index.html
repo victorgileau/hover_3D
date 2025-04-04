@@ -24,6 +24,19 @@
 </head>
 <body>
     <h1 class="title">Voici Quelques personnages</h1>
+    <div class="containerText">
+        <label class="widthNormal" for="widthNormal">
+            Normal width <em>card</em> : 
+            <input id="widthNormal" type="text" placeholder="(num)px">
+        </label>
+    
+        <label class="widthSmall" for="widthSmall">
+            Small width <em>card</em> (max-width: <em>800px</em>) : 
+            <input id="widthSmall" type="text" placeholder="(num)px">
+        </label>
+    </div>
+    
+    
     <div class="container app">
         <persocard v-for="perso in contentArr" :pnumber="perso.number" :ptitle="perso.title" :ptextcontent="perso.textContent"></persocard>
     </div>

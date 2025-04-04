@@ -56,6 +56,15 @@
     filter: hue-rotate(0);
   }
 }
+:root {
+  --widthNormal: 350px;
+  --widthSmall: 350px;
+}
+
+/*-- Original height : 350px--*/
+/*-- Original width : 350px--*/
+/*-- Original height : 300px--*/
+/*-- Original width : 350px--*/
 body {
   background-color: rgba(0, 0, 0, 0.8);
   overflow-x: hidden;
@@ -67,6 +76,55 @@ h1.title {
   color: white;
   text-align: center;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.containerText {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  font-family: "Pirata One", system-ui;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  /*
+  .widthNormal {
+
+      input{
+
+      }
+  }
+  .widthSmall {
+      input{
+
+      }
+  }*/
+}
+.containerText em {
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px;
+  transition-duration: 0.2s;
+}
+.containerText label:hover em {
+  color: #ffad42;
+  letter-spacing: 3px;
+}
+.containerText input {
+  font-size: 24px;
+  font-family: "Pirata One", system-ui;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  max-width: 75px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition-duration: 0.2s;
+}
+.containerText input:hover {
+  border: 2px solid #fff;
 }
 
 .card--1 {
@@ -781,13 +839,14 @@ h1.title {
   display: grid;
   gap: 50px;
   row-gap: 100px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(var(--widthNormal), auto));
   /*
   transform-style: preserve-3d;
   perspective: 1000px;
   place-content: center;*/
 }
 .container .containCard {
+  background-color: red;
   perspective: preserve-3d;
   perspective: 1000px;
   place-content: center;
@@ -881,13 +940,13 @@ h1.title {
   width: 125%;
   height: 125%;
   background-size: contain;
-  background-position: left;
+  background-position: center;
   transform: rotateX(-11deg) translateY(-80px) translateZ(30px);
 }
 
 @media screen and (max-width: 800px) {
   .container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(var(--widthSmall), auto));
     transform-style: preserve-3d;
     place-content: center;
     perspective: 800px;

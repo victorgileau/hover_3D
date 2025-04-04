@@ -3,6 +3,22 @@
 @use "./partials/fontsCSS";
 @use "./partials/lightsBar";
 
+:root {
+    --widthNormal: 350px;
+    --widthSmall: 350px;
+}
+
+
+/*-- Original height : 350px--*/
+$heightNormal: 350px;
+/*-- Original width : 350px--*/
+$widthNormal: var(--widthNormal);
+
+/*-- Original height : 300px--*/
+$heightSmaller: 300px;
+/*-- Original width : 350px--*/
+$widthSmaller: var(--widthSmall);
+
 body {
     background-color: rgba(0, 0, 0, 0.8);
     overflow-x: hidden;
@@ -14,6 +30,60 @@ h1.title {
     color: white;
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.containerText {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-family: "Pirata One", system-ui;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    em {
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 2px;
+        transition-duration: 0.2s;
+    }
+    label {
+        &:hover {
+            em {
+                color: #ffad42;
+                letter-spacing: 3px;
+            }
+        }
+    }
+    
+    input {
+        font-size: 24px;
+        font-family: "Pirata One", system-ui;
+        color: #fff;
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 5px;
+        max-width: 75px;
+        text-align: center;
+        border: 2px solid rgba(0,0,0,0);
+        transition-duration: 0.2s;
+        &:hover {
+            border: 2px solid #fff;
+        }
+    }
+    /*
+    .widthNormal {
+
+        input{
+            
+        }
+    }
+    .widthSmall {
+        input{
+            
+        }
+    }*/
 }
 
 @each $number, $srcImg, $colorText in tabImageAndColors.$charachterArrNormal {
@@ -74,7 +144,7 @@ h1.title {
     display: grid;
     gap: 50px;
     row-gap: 100px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fill, minmax($widthNormal, auto));
     //grid-template-rows: repeat(auto-fill, minmax(250px, auto));
     /*
     transform-style: preserve-3d;
@@ -82,13 +152,14 @@ h1.title {
     place-content: center;*/
 
     .containCard {
+        background-color: red;
         perspective: preserve-3d;
         perspective: 1000px;
         place-content: center;
     }
 
     .card {
-        height: 350px;
+        height: $heightNormal;
         font-family: "Jacquard 24", system-ui;
         background-position: center;
         background-size: cover, 150%;
@@ -190,8 +261,8 @@ h1.title {
                 width: 125%;
                 height: 125%;
                 background-size: contain;
-                background-position: left;
-                transform: rotateX(-11deg) translateY(-80px)  translateZ(30px);
+                background-position: center;
+                transform: rotateX(-11deg) translateY(-80px) translateZ(30px);
                 //transform: rotateX(-11deg) translateY(-80px) translateZ(25px);
             }
         }
@@ -202,14 +273,14 @@ h1.title {
 
 @media screen and (max-width: 800px) {
     .container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+        grid-template-columns: repeat(auto-fill, minmax($widthSmaller, auto));
         //grid-template-rows: repeat(auto-fill, minmax(400px, auto));
         transform-style: preserve-3d;
         place-content: center;
         perspective: 800px;
 
         .card {
-            height: 300px;
+            height: $heightSmaller;
 
             p {
                 font-size: 14px;
